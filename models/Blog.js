@@ -13,8 +13,7 @@ const BlogSchema = new mongoose.Schema({
     },
     comment: {
         type: String,
-        maxLength: 200,
-        required: true,
+        maxLength: 200
     },
     createdAt : {
         type: Date,
