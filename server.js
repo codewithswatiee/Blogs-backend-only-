@@ -5,8 +5,8 @@ require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 
 const app = express();
-app.use(express.json());
-app.use('/api/blogs', blogs);
+app.use(express.json()); //middleware
+app.use('/api/blogs', blogs); //mount
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
